@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 language: android
 sudo: required
 jdk: oraclejdk8
@@ -13,7 +16,11 @@ env:
   global:
   - ANDROID_API=26
   - EMULATOR_API=26
+<<<<<<< Updated upstream
   - ANDROID_BUILD_TOOLS=26.0.1
+=======
+  - ANDROID_BUILD_TOOLS=26.0.2
+>>>>>>> Stashed changes
   - ADB_INSTALL_TIMEOUT=5
 
 android:
@@ -93,6 +100,7 @@ cache:
   - $HOME/.gradle/wrapper/
   - $HOME/.android/build-cache
   - $HOME/.sonar/cache
+<<<<<<< Updated upstream
 =======
 +language: android
  +sudo: required
@@ -186,3 +194,5 @@ cache:
  +    - $HOME/.android/build-cache
  +    - $HOME/.sonar/cache
 >>>>>>> master
+=======
+>>>>>>> Stashed changes
