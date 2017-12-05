@@ -20,10 +20,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'jacoco-android'
 apply plugin: 'realm-android'
 apply plugin: 'io.fabric'
-<<<<<<< HEAD
 apply plugin: 'com.github.triplet.play'
-=======
->>>>>>> master
 
 // App version
 ext.versionMajor = 1 // API Changes, adding big new feature, redesign the App
@@ -41,7 +38,6 @@ android {
     compileSdkVersion 26
     buildToolsVersion '26.0.1'
 
-<<<<<<< HEAD
     signingConfigs {
         debug {
             keyAlias keystoreProperties['keyAliasDebug']
@@ -68,8 +64,6 @@ android {
         track = 'beta'
     }
 
-=======
->>>>>>> master
     defaultConfig {
         applicationId "com.davidmiguel.gobees"
         minSdkVersion 19
@@ -83,29 +77,9 @@ android {
         buildConfigField 'String', 'COMMIT_HASH', "\"${getCommitHash()}\""
         buildConfigField 'String', 'BUILD_DATE', "\"${getBuildDate()}\""
         buildConfigField 'String', 'OPEN_WEATHER_MAP_API_KEY', keystoreProperties['OpenWeatherMapApiKey']
-<<<<<<< HEAD
         playAccountConfig = playAccountConfigs.defaultAccountConfig
     }
 
-=======
-    }
-
-    signingConfigs {
-        debug {
-            keyAlias keystoreProperties['keyAliasDebug']
-            keyPassword keystoreProperties['keyPasswordDebug']
-            storeFile file(keystoreProperties['storeFileDebug'])
-            storePassword keystoreProperties['storePasswordDebug']
-        }
-        relase {
-            storeFile file(keystoreProperties['storeFileRelease'])
-            storePassword keystoreProperties['storePasswordRelease']
-            keyAlias keystoreProperties['keyAliasRelease']
-            keyPassword keystoreProperties['keyPasswordRelease']
-        }
-    }
-
->>>>>>> master
     buildTypes {
         debug {
             testCoverageEnabled true
@@ -223,7 +197,7 @@ dependencies {
     // Timber (logger) : https://github.com/JakeWharton/timber
     compile 'com.jakewharton.timber:timber:4.5.1'
     // Crashlytics (Crash reporting) : https://docs.fabric.io/android/changelog.html#crashlytics
-    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+    compile('com.crashlytics.sdk.android:crashlytics:2.7.0@aar') {
         transitive = true;
     }
 
@@ -308,11 +282,7 @@ sonarqube {
  * Returns the number of the current build in Travis.
  */
 private static Integer getBuildNumber() {
-<<<<<<< HEAD
     return System.getenv()["TRAVIS_BUILD_NUMBER"] as Integer ?: 1
-=======
-    return System.getenv()["TRAVIS_BUILD_NUMBER"] as Integer ?: 0
->>>>>>> master
 }
 
 /**
