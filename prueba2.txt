@@ -1,6 +1,1 @@
-que paaasa
-<<<<<<< HEAD
-asuegk
-=======
-pruebisima
->>>>>>> develop2
+Esto es una prueba.
