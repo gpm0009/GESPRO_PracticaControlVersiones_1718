@@ -1,2 +1,6 @@
 que paaasa
+<<<<<<< HEAD
 asuegk
+=======
+pruebisima
+>>>>>>> develop2
