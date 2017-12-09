@@ -1,1 +1,2 @@
 Esto es el conflicto de la prueba
+Esto es una prueba.
